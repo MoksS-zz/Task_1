@@ -119,7 +119,7 @@
   height: 32px;
   border: 2px solid var(--theme_color_border);
 
-  --checked: 2px;
+  --checked: 3px;
 
   &__button {
     position: absolute;
@@ -132,7 +132,7 @@
   }
 
   &_checked {
-    --checked: 68px;
+    --checked: 67px;
   }
 }
 
@@ -651,17 +651,17 @@
     .text__word_width_s {
       width: 20px;
       height: 8px;
-      margin: 5px 0;
+      margin: 6px 0;
     }
     .text__word_width_m {
       width: 48px;
       height: 8px;
-      margin: 5px 0;
+      margin: 6px 0;
     }
     .text__word_width_l {
       width: 100px;
       height: 8px;
-      margin: 5px 0;
+      margin: 6px 0;
     }
   }
   &_size_m {
@@ -689,17 +689,17 @@
     .text__word_width_s {
       width: 28px;
       height: 11px;
-      margin: 8px 0;
+      margin: 7px 0;
     }
     .text__word_width_m {
       width: 68px ;
       height: 11px;
-      margin: 8px 0;
+      margin: 7px 0;
     }
     .text__word_width_l {
       width: 138px;
       height: 11px;
-      margin: 8px 0;
+      margin: 7px 0;
     }
   }
   &_size_xl {
@@ -950,9 +950,16 @@
   &__hide {
     display: none;
   }
+
+  .text {
+    .text__word_width_m {
+      margin: 7px 0;
+    }
+  }
 }
 
 .cover {
+  margin-bottom: 6px;
   min-height: 472px;
   justify-content: space-between;
 
