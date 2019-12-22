@@ -1,7 +1,7 @@
-window.onload = function() {
-  
-const switchTheme = e => {
-  e.target.parentElement.classList.toggle("onoffswitch_checked");
+
+
+const switchTheme = () => {
+  document.querySelector(".onoffswitch").classList.toggle("onoffswitch_checked");
 
   const defaultTheme = document.querySelectorAll(".theme_color_project-default");
   const inverseTheme = document.querySelectorAll(".theme_color_project-inverse")
@@ -16,22 +16,31 @@ const switchTheme = e => {
   }
 };
 
-const history = e => {
-  e.target.nextElementSibling.classList.toggle("history__hide");
+const history = elem => {
+  elem.querySelector(".e-accordion__more").classList.toggle("history__hide");
 };
 
 function click(e) {
-  const elem = e.target
+  let elem = e.target
 
-  if (elem.classList.contains("onoffswitch__button")) {
-    switchTheme(e);
+  // Пользователи с нарушениями опорно-двигательного аппарата,
+  // которым трудно попасть на мельнкую
+  // Так что лучше уже так, конечно лучше использовать tabindex и указатели
+  // Но это тут менять нужно html :(
+  if (elem.classList.contains("onoffswitch__button") || elem.classList.contains("onoffswitch")) {
+    switchTheme();
     return;
   }
-
-  if (elem.classList.contains("history__show")) {
-    history(e);
+  
+  while(elem) {
+    if(elem.classList.contains("history__transaction")) {
+      history(elem);
+      return; 
+    }
+    elem = elem.parentElement;
   }
-}
+};
 
-document.body.addEventListener("click", click);
+window.onload = function () {
+  document.body.addEventListener("click", click);
 };
