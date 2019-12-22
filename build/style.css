@@ -356,7 +356,7 @@ template {
   --theme_color_text_secondary: rgba(0, 0, 0, 0.6);
   --theme_color_text_ghost: rgba(0, 0, 0, 0.3);
   --theme_color_text_link: #0077ff;
-  --theme_img: url("../assets/images/image-placeholder-primary.svg");
+  --theme_img: url("../images/image-placeholder-primary.svg");
 }
 .theme_color_project-brand {
   --theme_color_default: #0077ff;
@@ -366,7 +366,7 @@ template {
   --theme_color_text_secondary: rgba(255, 255, 255, 0.6);
   --theme_color_text_ghost: rgba(255, 255, 255, 0.3);
   --theme_color_text_link: #FFFFFF;
-  --theme_img: url("../assets/images/image-placeholder-inverse.svg");
+  --theme_img: url("../images/image-placeholder-inverse.svg");
 }
 .theme_color_project-inverse {
   --theme_color_default: #000000;
@@ -376,7 +376,7 @@ template {
   --theme_color_text_secondary: rgba(255, 255, 255, 0.6);
   --theme_color_text_ghost: rgba(255, 255, 255, 0.3);
   --theme_color_text_link: #0077ff;
-  --theme_img: url("../assets/images/image-placeholder-inverse.svg");
+  --theme_img: url("../images/image-placeholder-inverse.svg");
 }
 .theme_color_project-warning {
   --theme_color_default: #ff3333;

@@ -1,0 +1,13 @@
+{
+  "name": "task_1",
+  "version": "1.0.0",
+  "description": "Yandex SHRI TASK_1",
+  "main": "none",
+  "dependencies": {
+    "sass": "1.23.7"
+  },
+  "scripts": {
+    "watch": "npx sass --watch style:build"
+  },
+  "author": "MoksS"
+}
