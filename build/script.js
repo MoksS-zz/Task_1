@@ -1,4 +1,5 @@
-
+window.onload = function() {
+  
 const switchTheme = e => {
   e.target.parentElement.classList.toggle("onoffswitch_checked");
 
@@ -32,6 +33,5 @@ function click(e) {
   }
 }
 
-if(document) {
-  document.body.addEventListener("click", click);
-}
+document.body.addEventListener("click", click);
+};
