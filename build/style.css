@@ -1127,10 +1127,14 @@ template {
   height: 180px;
 }
 .cover__preview .image {
+  border: 3px solid var(--theme_color_text_primary);
   margin-top: 0;
 }
 .cover__info :nth-child(3) {
-  margin-top: 10px;
+  margin-top: 9px;
+}
+.cover__info :nth-child(2) .text__word {
+  margin: 10px 0;
 }
 .cover__text {
   height: var(--sp_l);

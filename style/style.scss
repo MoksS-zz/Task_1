@@ -960,18 +960,26 @@
     margin-bottom: var(--sp_l);
     height: 180px;
     .image {
+      border: 3px solid var(--theme_color_text_primary);
       margin-top: 0;
     }
   }
 
   &__info {
     :nth-child(3) {
-      margin-top: 10px;
+      margin-top: 9px;
+    }
+
+    :nth-child(2) {
+      .text__word {
+        margin: 10px 0;
+      }
     }
   }
 
   &__text {
     height: var(--sp_l);
+
   }
 
 }
