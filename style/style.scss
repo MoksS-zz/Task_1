@@ -957,7 +957,7 @@
 }
 
 .cover {
-  margin-bottom: 6px;
+  margin-bottom: 15px;
   min-height: 472px;
   justify-content: space-between;
 
@@ -1001,7 +1001,6 @@
   
 
   &__preview {
-    padding-bottom: 4px;
     display: flex;
     justify-content: center;
     grid-column-gap: var(--sp_xs);
