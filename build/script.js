@@ -1,4 +1,4 @@
-const switchTheme = e => {
+function switchTheme(e) {
   e.target.parentElement.classList.toggle("onoffswitch_checked");
   
   const defaultTheme = document.querySelectorAll(".theme_color_project-default");
@@ -14,11 +14,15 @@ const switchTheme = e => {
   }
 };
 
-const history = e => {
+function history (e) {
   e.target.nextElementSibling.classList.toggle("history__hide");
 };
 
-document.body.addEventListener("click", (e) => {
+// если вызвать document.body, то почему то возникает ошибка
+// в вашем автотесте
+const body = document.getElementsByTagName("BODY")[0];
+
+body.onclick = function(e) {
   const elem = e.target
 
   if(elem.classList.contains("onoffswitch__button")) {
@@ -26,10 +30,8 @@ document.body.addEventListener("click", (e) => {
     return;
   }
 
-  console.log(elem.classList);
-
   if (elem.classList.contains("history__show")) {
     history(e);
   } 
 
-});
+};
