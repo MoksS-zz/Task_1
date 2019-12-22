@@ -736,7 +736,7 @@ template {
   padding: var(--sp_xxl);
 }
 .informer__action {
-  margin-top: 12px;
+  margin-top: 9px;
   display: flex;
 }
 .informer__action_distribute_default {
@@ -928,17 +928,17 @@ template {
 .text_size_xxl .text__word_width_s {
   width: 36px;
   height: 16px;
-  margin: 13px 0;
+  margin: 12px 0;
 }
 .text_size_xxl .text__word_width_m {
   width: 88px;
   height: 16px;
-  margin: 13px 0;
+  margin: 12px 0;
 }
 .text_size_xxl .text__word_width_l {
   width: 184px;
   height: 16px;
-  margin: 13px 0;
+  margin: 12px 0;
 }
 .text_type_h1 {
   margin: 18px 0 24px;
