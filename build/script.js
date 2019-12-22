@@ -1,37 +1,37 @@
-if (typeof window !== 'undefined') {
 
-  const switchTheme = e => {
-    e.target.parentElement.classList.toggle("onoffswitch_checked");
+const switchTheme = e => {
+  e.target.parentElement.classList.toggle("onoffswitch_checked");
 
-    const defaultTheme = document.querySelectorAll(".theme_color_project-default");
-    const inverseTheme = document.querySelectorAll(".theme_color_project-inverse")
+  const defaultTheme = document.querySelectorAll(".theme_color_project-default");
+  const inverseTheme = document.querySelectorAll(".theme_color_project-inverse")
 
-    for (elem of defaultTheme) {
-      elem.classList.remove("theme_color_project-default");
-      elem.classList.add("theme_color_project-inverse");
-    }
-    for (elem of inverseTheme) {
-      elem.classList.remove("theme_color_project-inverse");
-      elem.classList.add("theme_color_project-default");
-    }
-  };
+  for (elem of defaultTheme) {
+    elem.classList.remove("theme_color_project-default");
+    elem.classList.add("theme_color_project-inverse");
+  }
+  for (elem of inverseTheme) {
+    elem.classList.remove("theme_color_project-inverse");
+    elem.classList.add("theme_color_project-default");
+  }
+};
 
-  const history = e => {
-    e.target.nextElementSibling.classList.toggle("history__hide");
-  };
+const history = e => {
+  e.target.nextElementSibling.classList.toggle("history__hide");
+};
 
+function click(e) {
+  const elem = e.target
 
-  document.body.addEventListener("click", (e) => {
-    const elem = e.target
+  if (elem.classList.contains("onoffswitch__button")) {
+    switchTheme(e);
+    return;
+  }
 
-    if (elem.classList.contains("onoffswitch__button")) {
-      switchTheme(e);
-      return;
-    }
+  if (elem.classList.contains("history__show")) {
+    history(e);
+  }
+}
 
-    if (elem.classList.contains("history__show")) {
-      history(e);
-    }
-
-  });
+if(document) {
+  document.body.addEventListener("click", click);
 }
