@@ -670,17 +670,17 @@
     .text__word_width_s {
       width: 24px ;
       height: 10px;
-      margin: 7.4px 0;
+      margin: 7px 0;
     }
     .text__word_width_m {
       width: 56px ;
       height: 10px;
-      margin: 7.4px 0;
+      margin: 7px 0;
     }
     .text__word_width_l {
       width: 114px;
       height: 10px;
-      margin: 7.4px 0;
+      margin: 7px 0;
     }
   }
   &_size_l {
@@ -865,7 +865,6 @@
 .image {
   height: 100%;
   width: 100%;
-  border: 3px solid var(--theme_color_border);
   background-color: var(--theme_color_default);
   background-image: var(--theme_img);
   background-repeat: no-repeat;
@@ -989,6 +988,7 @@
   
 
   &__preview {
+    padding-bottom: 4px;
     display: flex;
     justify-content: center;
     grid-column-gap: var(--sp_xs);

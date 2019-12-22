@@ -26,7 +26,7 @@ function click(e) {
   // Пользователи с нарушениями опорно-двигательного аппарата,
   // которым трудно попасть на мельнкую
   // Так что лучше уже так, конечно лучше использовать tabindex и указатели
-  // Но это тут менять нужно html :(
+  // Но тут менять нужно html :(
   if (elem.classList.contains("onoffswitch__button") || elem.classList.contains("onoffswitch")) {
     switchTheme();
     return;
