@@ -114,6 +114,7 @@
 }
 
 .onoffswitch {
+  transform: translateY(1px);
   position: relative;
   width: 97px;
   height: 32px;
@@ -924,8 +925,15 @@
   }
 
   &__title {
+    transform: translateY(-1px);
     margin-bottom: var(--sp_xxxl);
   }
+
+  &__title + .grid {
+    transform: translateY(1px);
+  }
+
+
 }
 
 .history {
@@ -976,12 +984,11 @@
 
   &__info {
     :nth-child(3) {
-      margin-top: 9px;
+      margin-top: 10px;
     }
 
     :nth-child(2) {
       .text__word {
-        transform: translateY(-1px);
         margin: 10px 0;
       }
     }
@@ -1053,10 +1060,18 @@
         transform: translateY(-4px);
       }
 
+      .text_type_h2 {
+        transform: translateY(-1px);
+      }
+
       .text_size_m{
         .text__word {
           margin: 7.4px 0;
         }
+      }
+
+      :nth-child(4).text {
+        transform: translateY(2px);
       }
     }
   }

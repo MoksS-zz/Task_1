@@ -432,6 +432,7 @@ template {
 }
 
 .onoffswitch {
+  transform: translateY(1px);
   position: relative;
   width: 97px;
   height: 32px;
@@ -1096,7 +1097,11 @@ template {
   height: 160px;
 }
 .product__title {
+  transform: translateY(-1px);
   margin-bottom: var(--sp_xxxl);
+}
+.product__title + .grid {
+  transform: translateY(1px);
 }
 
 .history {
@@ -1138,10 +1143,9 @@ template {
   margin-top: 0;
 }
 .cover__info :nth-child(3) {
-  margin-top: 9px;
+  margin-top: 10px;
 }
 .cover__info :nth-child(2) .text__word {
-  transform: translateY(-1px);
   margin: 10px 0;
 }
 .cover__text {
@@ -1191,8 +1195,14 @@ template {
 .section_indent-b_xxxxl .grid .grid__fraction_m-col_8 .text_type_h1 {
   transform: translateY(-4px);
 }
+.section_indent-b_xxxxl .grid .grid__fraction_m-col_8 .text_type_h2 {
+  transform: translateY(-1px);
+}
 .section_indent-b_xxxxl .grid .grid__fraction_m-col_8 .text_size_m .text__word {
   margin: 7.4px 0;
+}
+.section_indent-b_xxxxl .grid .grid__fraction_m-col_8 :nth-child(4).text {
+  transform: translateY(2px);
 }
 
 @media only screen and (max-width: 1024px) {
