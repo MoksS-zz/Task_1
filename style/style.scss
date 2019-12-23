@@ -376,7 +376,6 @@
       margin-bottom: var(--sp_xxxxl);
     }
 
-    // SPACE
 
     &_space-h_xxxs {
       padding-left: var(--sp_xxxs);
@@ -416,7 +415,6 @@
       padding-right: var(--sp_xxxxl);
     }
     
-    // SPACE-V
 
     &_space-v_xxxs {
       padding-top: var(--sp_xxxs);
@@ -616,7 +614,7 @@
   }
 }
 
-//CONTENT BLOCK
+
 
 .text {
   display: flex;
@@ -872,7 +870,7 @@
   background-position: center;
 }
 
-// CONTENT BLOCKS
+
 
 .payment {
   border: 3px solid var(--theme_color_border);
@@ -889,8 +887,7 @@
     :last-child {
       margin-bottom: 0;
     }
-    // ПРОШУ ПРОЩЕНИЯ ЗА ЭТОТ ГОВНО-КОД, Я ПРОСТО НЕ ЗНАЮ КАК СДЕЛАТЬ
-    // ЧТОБЫ ВСЕ БЫЛО КРАСИВО. ПОНИМАЮ, ЧТО НАРУШИЛ МЕТОДОЛОГИЮ BEM :(
+
     .form__item {
       .form__label {
         .text__word {
@@ -1051,7 +1048,6 @@
   }
 }
 
-// костыль чтобы все работало, потому что я тупой.
 .section_indent-b_xxxxl {
   .grid {
     .grid__fraction_m-col_8 {
@@ -1093,7 +1089,6 @@
     }
   }
 
-  // как же я плох ((
   .warning {
 
     &__button-wrapper {
