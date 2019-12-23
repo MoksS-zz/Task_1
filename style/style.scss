@@ -981,6 +981,7 @@
 
     :nth-child(2) {
       .text__word {
+        transform: translateY(-1px);
         margin: 10px 0;
       }
     }
@@ -1090,4 +1091,14 @@
 
   }
 
+  .section_indent-b_xxxxl {
+    .grid {
+      .grid__fraction_m-col_8 {
+
+        .text_type_h1 {
+          transform: translateY(-17px);
+        }
+      }
+    }
+  }
 }
