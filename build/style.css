@@ -736,7 +736,7 @@ template {
   padding: var(--sp_xxl);
 }
 .informer__action {
-  margin-top: 9px;
+  margin-top: 5px;
   display: flex;
 }
 .informer__action_distribute_default {
@@ -1068,7 +1068,7 @@ template {
   flex-direction: column;
 }
 .payment__header {
-  margin-top: -3px;
+  margin-top: -5px;
 }
 .payment__content :last-child {
   margin-bottom: 0;
