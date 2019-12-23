@@ -1229,7 +1229,7 @@ template {
   }
   .section_indent-b_xxxxl .grid .grid__fraction_m-col_8 .text_type_h1 {
     transform: translateY(-20px);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 
