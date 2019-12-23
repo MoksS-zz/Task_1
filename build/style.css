@@ -1225,10 +1225,10 @@ template {
   }
 
   .section_indent-b_xxxxl .grid_m-columns_12 {
-    margin-bottom: 52px;
+    margin-bottom: 53px;
   }
   .section_indent-b_xxxxl .grid .grid__fraction_m-col_8 .text_type_h1 {
-    transform: translateY(-23px);
+    transform: translateY(-19px);
     margin-bottom: 10px;
   }
 }
