@@ -1,5 +1,3 @@
-
-
 const switchTheme = () => {
   document.querySelector(".onoffswitch").classList.toggle("onoffswitch_checked");
 
@@ -23,10 +21,6 @@ const history = elem => {
 function click(e) {
   let elem = e.target
 
-  // Пользователи с нарушениями опорно-двигательного аппарата,
-  // которым трудно попасть на мельнкую
-  // Так что лучше уже так, конечно лучше использовать tabindex и указатели
-  // Но тут менять нужно html :(
   if (elem.classList.contains("onoffswitch__button") || elem.classList.contains("onoffswitch")) {
     switchTheme();
     return;
