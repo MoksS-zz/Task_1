@@ -1187,6 +1187,13 @@ template {
   max-width: 1280px;
 }
 
+.section_indent-b_xxxxl .grid .grid__fraction_m-col_8 .text_type_h1 {
+  transform: translateY(-4px);
+}
+.section_indent-b_xxxxl .grid .grid__fraction_m-col_8 .text_size_m .text__word {
+  margin: 7.4px 0;
+}
+
 @media only screen and (max-width: 1024px) {
   .theme_gap_small {
     --gap: 15px;

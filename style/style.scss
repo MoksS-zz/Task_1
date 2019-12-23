@@ -1043,6 +1043,24 @@
   }
 }
 
+// костыль чтобы все работало, потому что я тупой.
+.section_indent-b_xxxxl {
+  .grid {
+    .grid__fraction_m-col_8 {
+
+      .text_type_h1 {
+        transform: translateY(-4px);
+      }
+
+      .text_size_m{
+        .text__word {
+          margin: 7.4px 0;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1024px) {
 
  .theme {
