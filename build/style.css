@@ -1068,7 +1068,7 @@ template {
   flex-direction: column;
 }
 .payment__header {
-  margin-top: -4px;
+  margin-top: -2px;
 }
 .payment__content :last-child {
   margin-bottom: 0;
@@ -1201,6 +1201,11 @@ template {
     transform: translateY(10px);
   }
   .warning .text {
+    transform: translateY(-2px);
+  }
+
+  .event__title {
+    margin-top: -2px;
     transform: translateY(-2px);
   }
 }

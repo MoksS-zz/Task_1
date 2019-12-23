@@ -881,7 +881,7 @@
   }
 
   &__header {
-    margin-top: -4px;
+    margin-top: -2px;
   }
 
   &__content {
@@ -1069,4 +1069,12 @@
     }
 
   }
+
+  .event {
+    &__title {
+      margin-top: -2px;
+    transform: translateY(-2px);
+    }
+  }
+
 }
