@@ -1016,6 +1016,8 @@
   }
 
   &__title {
+    margin-top: -2px;
+    transform: translateY(-2px);
     margin-bottom: var(--sp_s);
   }
   
@@ -1070,11 +1072,6 @@
 
   }
 
-  .event {
-    &__title {
-      margin-top: -2px;
-    transform: translateY(-2px);
-    }
-  }
+
 
 }
