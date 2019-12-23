@@ -1067,6 +1067,9 @@ template {
 .payment__content.form__content {
   flex-direction: column;
 }
+.payment__header {
+  margin-top: -3px;
+}
 .payment__content :last-child {
   margin-bottom: 0;
 }
@@ -1192,6 +1195,13 @@ template {
   }
   .grid__fraction {
     grid-column: span 1;
+  }
+
+  .warning__button-wrapper {
+    transform: translateY(10px);
+  }
+  .warning .text {
+    transform: translateY(-2px);
   }
 }
 

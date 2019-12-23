@@ -880,6 +880,10 @@
     flex-direction: column;
   }
 
+  &__header {
+    margin-top: -3px;
+  }
+
   &__content {
     :last-child {
       margin-bottom: 0;
@@ -1051,5 +1055,18 @@
     &__fraction {
       grid-column: span 1;
     }
+  }
+
+  // как же я плох ((
+  .warning {
+
+    &__button-wrapper {
+      transform: translateY(10px);
+    }
+    
+    .text {
+      transform: translateY(-2px);
+    }
+
   }
 }

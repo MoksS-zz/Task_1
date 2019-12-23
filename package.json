@@ -7,7 +7,7 @@
     "sass": "1.23.7"
   },
   "scripts": {
-    "watch": "npx sass --watch style:build"
+    "watch": "sass --watch style:build"
   },
   "author": "MoksS"
 }
